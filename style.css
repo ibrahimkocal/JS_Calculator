@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Tektur:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 30px;
+}
+
+body {
+    font-family: 'Tektur', cursive;
+    font-size: 1.2rem;
+    background-color: cadetblue;
+}
+
+.title {
+    animation: blink 1s infinite;
+    font-style: italic;
+    text-align: center;
+    padding: 25px 0;
+}
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+}
+
+
+.calculator{
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.calculator-input{
+    background-color: black;
+    color: #ffff;
+    text-align: right;
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+    font-family: 'Tektur', cursive;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.calculator-button{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+button{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 70px;
+    width: 75px;
+    border-color: white;
+    border-radius: 3px;
+    box-shadow:0cqb;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size:30px;
+    font-family: 'Tektur', cursive;
+}   
+
+button:hover{
+    background-color:blue ;
+    color: #ffff;
+}
+
+.clear{
+    background-color: #f91119;
+    border-color: white;
+    color: #fff;
+    padding: 10px 17px;
+}
+
+.clear:hover {
+    background-color: #f17377;
+}
+
+.operator{
+    color:aqua;
+}
+
+.equal-sign{
+    height: 70%;
+    grid-area: 2/4/6/4;
+}
